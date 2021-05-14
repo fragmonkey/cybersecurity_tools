@@ -28,6 +28,8 @@ try:
 			print ("Port {}:  Open".format(port))
 			openPorts = format(port)
 		sock.close()
+	if not openPorts:
+		openPorts = "No Ports Found"
 	print("All Open Ports: ",openPorts)
 
 except KeyboardInterrupt:
